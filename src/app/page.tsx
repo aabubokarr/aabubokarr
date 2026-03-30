@@ -1,17 +1,21 @@
-import Navbar from '@/components/Navbar';
-import HeroSection from '@/components/HeroSection';
-import ExperienceSection from '@/components/ExperienceSection';
-import ProjectsSection from '@/components/ProjectsSection';
-import ContactSection from '@/components/ContactSection';
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Skills from "@/components/sections/Skills";
+import Experience from "@/components/sections/Experience";
+import Projects from "@/components/sections/Projects";
+import Education from "@/components/sections/Education";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#050505]">
-      <Navbar />
-      <HeroSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <ContactSection />
-    </main>
+    <div className="flex flex-col w-full">
+      <Hero />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Education />
+      <Contact />
+    </div>
   );
 }

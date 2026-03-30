@@ -12,12 +12,20 @@ const ContactSection = () => {
                <span className="text-blue-500">Let&apos;s build it together.</span>
              </h3>
              
-             <a 
-               href="mailto:mdabu0212@gmail.com"
-               className="inline-block px-12 py-5 bg-white text-black font-bold text-xl rounded-full hover:bg-blue-500 hover:text-white transition-all transform hover:scale-105"
-             >
-               mdabu0212@gmail.com
-             </a>
+             <div className="flex flex-col items-center gap-4">
+               <a 
+                 href="mailto:abu.bokar@northsouth.edu"
+                 className="inline-block px-12 py-5 bg-white text-black font-bold text-xl rounded-full hover:bg-blue-500 hover:text-white transition-all transform hover:scale-105"
+               >
+                 abu.bokar@northsouth.edu
+               </a>
+               <a 
+                 href="tel:01746883852"
+                 className="inline-block px-8 py-3 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all font-mono"
+               >
+                 +880 1746 883852
+               </a>
+             </div>
 
              <div className="mt-24 flex justify-between items-end border-b border-gray-800 pb-8 text-gray-400 uppercase text-sm tracking-widest">
                <span>&copy; 2024 Md Abu Bokar</span>

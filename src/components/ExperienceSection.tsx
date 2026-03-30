@@ -1,28 +1,27 @@
 const experiences = [
   {
-    year: '2022 - Present',
-    company: 'Upwork / Freelance',
-    role: 'Full-Stack Developer',
-    stack: 'Next.js, Node.js, Tailwind'
-  },
-  {
-    year: '2021 - 2022',
-    company: 'VK Development Lab',
+    year: 'Nov, 2023 - July, 2025',
+    company: 'Kolorowey',
     role: 'Frontend Developer',
-    stack: 'React, Redux'
+    stack: 'React.js, TailwindCSS, APIs'
   },
   {
-    year: '2020 - 2021',
-    company: 'SN Inc.',
-    role: 'Junior Developer',
-    stack: 'JavaScript, Python'
+    year: 'Sept, 2022 - Dec, 2025',
+    company: 'Sunday studio',
+    role: 'Frontend Developer',
+    stack: 'Next.js, Framer Motion'
   }
 ];
 
 const skills = [
-  { category: 'Frontend', items: 'React, Next.js, Vue, Tailwind, TypeScript' },
-  { category: 'Backend', items: 'Node.js, Express, Python, PostgreSQL, MongoDB' },
-  { category: 'DevOps', items: 'Docker, AWS, Git, CI/CD' },
+  { category: 'Language', items: 'C/C++, Java, Python, JavaScript, TypeScript' },
+  { category: 'Frontend', items: 'React Js, Next Js, TailwindCSS, Bootstrap, Framer Motion' },
+  { category: 'Backend', items: 'Node Js, Django, Express Js, Flask, FastAPI, Uvicorn' },
+  { category: 'Database', items: 'MySQL, Postgresql, MongoDB' },
+  { category: 'Mobile', items: 'React Native, Expo' },
+  { category: 'No Code', items: 'Framer, Webflow, Wordpress' },
+  { category: 'ML/DL', items: 'MediaPipe, PyTorch, TensorFlow, OpenCV, BERT' },
+  { category: 'Tools', items: 'Figma, Postman, Photoshop, After Effects, Premiere Pro, Excel, Gazebo' }
 ];
 
 const ExperienceSection = () => {
@@ -60,17 +59,19 @@ const ExperienceSection = () => {
         <div>
            <div className="sticky top-32">
              <h2 className="text-5xl font-bold mb-16 text-white">skills_</h2>
-             <div className="flex flex-col gap-6">
+             <div className="flex flex-col gap-2">
                 {skills.map((skill, i) => (
-                  <div key={i} className="p-8 rounded-3xl border border-gray-800 bg-white/5 hover:bg-white/10 transition-colors">
-                    <h3 className="text-xl font-bold text-white mb-4">{skill.category}</h3>
-                    <p className="text-gray-400 font-mono leading-relaxed">
+                  <div key={i} className="flex flex-col sm:flex-row sm:items-center py-3 px-4 rounded-xl border border-transparent hover:border-white/5 hover:bg-white/[0.02] transition-colors group">
+                    <h3 className="text-xs font-bold text-gray-500 uppercase tracking-widest w-28 shrink-0 mb-2 sm:mb-0 group-hover:text-blue-400 transition-colors">
+                      {skill.category}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
                       {skill.items.split(', ').map((item, idx) => (
-                         <span key={idx} className="inline-block mr-4 mb-2 hover:text-cyan-400 transition-colors">
-                           / {item}
+                         <span key={idx} className="px-3 py-1 text-xs font-medium rounded-full bg-white/5 text-gray-300 border border-white/5 hover:text-white hover:bg-white/10 transition-all cursor-default">
+                           {item}
                          </span>
                       ))}
-                    </p>
+                    </div>
                   </div>
                 ))}
              </div>

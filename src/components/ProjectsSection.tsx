@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       <div className="max-w-[1800px] mx-auto">
         <div className="flex justify-between items-end mb-20">
           <h2 className="text-massive text-white opacity-10">.../Projects ...</h2>
-          <Link href="https://github.com/woabu0" className="hidden md:block text-white border-b border-white pb-1 hover:opacity-70 transition-opacity">
+          <Link href="https://github.com/aabubokarr" className="hidden md:block text-white border-b border-white pb-1 hover:opacity-70 transition-opacity">
             View All on GitHub
           </Link>
         </div>
