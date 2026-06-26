@@ -1,34 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { useRef } from "react";
-import * as THREE from "three";
-
-function Icosahedron() {
-  const meshRef = useRef<THREE.Mesh>(null!);
-
-  useFrame((state, delta) => {
-    meshRef.current.rotation.x += delta * 0.2;
-    meshRef.current.rotation.y += delta * 0.3;
-    
-    // Slight parallax effect based on mouse
-    meshRef.current.rotation.x += (state.pointer.y * 0.1 - meshRef.current.rotation.x) * 0.1;
-    meshRef.current.rotation.y += (state.pointer.x * 0.1 - meshRef.current.rotation.y) * 0.1;
-  });
-
-  return (
-    <mesh ref={meshRef}>
-      <icosahedronGeometry args={[2, 0]} />
-      <meshBasicMaterial 
-        color="#4FFBDF" 
-        wireframe={true} 
-        transparent={true}
-        opacity={0.3}
-      />
-    </mesh>
-  );
-}
 
 export default function Hero() {
   const name = "Md Abu Bokar";
@@ -44,10 +16,10 @@ export default function Hero() {
         }}
       />
       
-      <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+      <div className="max-w-7xl mx-auto w-full flex flex-col items-center justify-center relative z-10 text-center">
         
-        {/* Left Content */}
-        <div className="flex flex-col justify-center">
+        {/* Centered Content */}
+        <div className="flex flex-col items-center justify-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -57,7 +29,7 @@ export default function Hero() {
             {"< Software Engineer />"}
           </motion.div>
           
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-text-primary leading-tight tracking-tighter mb-6 flex flex-wrap">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-text-primary leading-tight tracking-tighter mb-6 flex flex-wrap justify-center">
             {name.split("").map((char, index) => (
               <motion.span
                 key={index}
@@ -97,7 +69,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.2, duration: 0.6 }}
-            className="flex flex-wrap gap-4"
+            className="flex flex-wrap gap-4 justify-center"
           >
             <motion.a
               whileHover={{ scale: 1.02 }}
@@ -118,22 +90,6 @@ export default function Hero() {
             </motion.a>
           </motion.div>
         </div>
-        
-        {/* Right Content - 3D Wireframe */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2, duration: 1 }}
-          className="hidden lg:block h-[600px] w-full relative"
-        >
-          <div className="absolute inset-0 cursor-crosshair">
-            <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
-              <ambientLight intensity={0.5} />
-              <Icosahedron />
-            </Canvas>
-          </div>
-        </motion.div>
-        
       </div>
     </section>
   );

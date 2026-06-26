@@ -4,7 +4,8 @@ import "./globals.css";
 import CustomCursor from "@/components/ui/CustomCursor";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import BackgroundMesh from "@/components/ui/BackgroundMesh";
-import Navigation from "@/components/layout/Navigation";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const syne = Syne({
   variable: "--font-syne",
@@ -40,11 +41,12 @@ export default function RootLayout({
         <CustomCursor />
         <ScrollProgress />
         <BackgroundMesh />
-        <div className="flex flex-col md:flex-row min-h-screen">
-          <Navigation />
-          <main className="flex-1 w-full relative">
+        <div className="flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-1 w-full relative pt-20">
             {children}
           </main>
+          <Footer />
         </div>
       </body>
     </html>

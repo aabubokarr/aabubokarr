@@ -64,30 +64,6 @@ export default function Contact() {
           </a>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="flex flex-wrap justify-center items-center gap-6 md:gap-12 font-mono text-text-secondary"
-        >
-          <a href="#" className="hover:text-accent transition-colors flex items-center gap-2">
-            GitHub
-          </a>
-          <span className="text-text-dim">&middot;</span>
-          <a href="#" className="hover:text-accent transition-colors flex items-center gap-2">
-            LinkedIn
-          </a>
-          <span className="text-text-dim">&middot;</span>
-          <a href="/resume.pdf" target="_blank" className="hover:text-accent transition-colors flex items-center gap-2">
-            Resume <ArrowDown className="w-4 h-4 ml-1" />
-          </a>
-        </motion.div>
-
-      </div>
-      
-      <div className="absolute bottom-8 text-center w-full font-mono text-xs text-text-dim z-10">
-        Built for Md Abu Bokar &middot; Software Engineer
       </div>
     </section>
   );
