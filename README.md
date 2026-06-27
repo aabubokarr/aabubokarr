@@ -93,45 +93,6 @@ Software Engineer who loves building products that sit at the intersection of **
 
 ---
 
-### 🚀 Featured Projects
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3>🔐 Sherlock</h3>
-      <p>A real-time security monitoring system with live alerts and access control management.</p>
-      <img src="https://img.shields.io/badge/Node.js-080B14?style=flat-square&logo=nodedotjs&logoColor=339933" />
-      <img src="https://img.shields.io/badge/React-080B14?style=flat-square&logo=react&logoColor=61DAFB" />
-      <img src="https://img.shields.io/badge/PostgreSQL-080B14?style=flat-square&logo=postgresql&logoColor=4169E1" />
-    </td>
-    <td width="50%">
-      <h3>💰 Fifr</h3>
-      <p>A financial platform for streamlined transaction tracking and portfolio management.</p>
-      <img src="https://img.shields.io/badge/Next.js-080B14?style=flat-square&logo=nextdotjs&logoColor=ffffff" />
-      <img src="https://img.shields.io/badge/Express-080B14?style=flat-square&logo=express&logoColor=ffffff" />
-      <img src="https://img.shields.io/badge/PostgreSQL-080B14?style=flat-square&logo=postgresql&logoColor=4169E1" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>👁️ Amoha</h3>
-      <p>AI-powered eye disease detection using deep learning, PyTorch, and medical imaging — built to assist early diagnosis.</p>
-      <img src="https://img.shields.io/badge/PyTorch-080B14?style=flat-square&logo=pytorch&logoColor=EE4C2C" />
-      <img src="https://img.shields.io/badge/Python-080B14?style=flat-square&logo=python&logoColor=3776AB" />
-      <img src="https://img.shields.io/badge/Computer_Vision-080B14?style=flat-square&logo=opencv&logoColor=5C3EE8" />
-    </td>
-    <td width="50%">
-      <h3>🎨 Devign</h3>
-      <p>A motion-first agency website with scroll-triggered animations, rich UI, and pixel-perfect Framer Motion work.</p>
-      <img src="https://img.shields.io/badge/Next.js-080B14?style=flat-square&logo=nextdotjs&logoColor=ffffff" />
-      <img src="https://img.shields.io/badge/Framer_Motion-080B14?style=flat-square&logo=framer&logoColor=ffffff" />
-      <img src="https://img.shields.io/badge/TailwindCSS-080B14?style=flat-square&logo=tailwindcss&logoColor=06B6D4" />
-    </td>
-  </tr>
-</table>
-
----
-
 ### 📊 GitHub Stats
 
 <div align="center">

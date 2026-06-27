@@ -23,8 +23,8 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Md Abu Bokar | Software Engineer",
-  description: "Portfolio of Md Abu Bokar - Software Engineer, Full-Stack Developer, and Machine Learning Enthusiast.",
+  title: "Abu Bokar | Software Engineer",
+  description: "Portfolio of Abu Bokar - Software Engineer, Full-Stack Developer, and Machine Learning Enthusiast.",
 };
 
 export default function RootLayout({

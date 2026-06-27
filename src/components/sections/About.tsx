@@ -33,8 +33,8 @@ export default function About() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex flex-col gap-6"
         >
-          <div className="font-mono text-accent text-sm md:text-base">02 / About</div>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight">
+          <div className="font-mono text-accent text-sm md:text-base text-center">02 / About</div>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight text-center">
             A bit about me.
           </h2>
           <p className="text-text-secondary text-lg leading-relaxed max-w-lg mb-8">

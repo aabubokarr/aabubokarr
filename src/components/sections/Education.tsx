@@ -26,8 +26,8 @@ export default function Education() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <div className="font-mono text-accent text-sm md:text-base mb-4">06 / Education & Languages</div>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight">
+          <div className="font-mono text-accent text-sm md:text-base mb-4 text-center">06 / Education & Languages</div>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight text-center">
             Background.
           </h2>
         </motion.div>

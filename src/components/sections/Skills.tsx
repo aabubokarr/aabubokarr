@@ -92,8 +92,8 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <div className="font-mono text-accent text-sm md:text-base mb-4">03 / Skills</div>
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight">
+          <div className="font-mono text-accent text-sm md:text-base mb-4 text-center">03 / Skills</div>
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight text-center">
             The tools I work with.
           </h2>
         </motion.div>

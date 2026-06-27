@@ -22,15 +22,12 @@ export default function Projects({ projects }: ProjectsProps) {
           transition={{ duration: 0.6 }}
           className="mb-16 flex justify-between items-end"
         >
-          <div>
-            <div className="font-mono text-accent text-sm md:text-base mb-4">05 / Projects</div>
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight">
+          <div className="w-full text-center">
+            <div className="font-mono text-accent text-sm md:text-base mb-4 text-center">05 / Projects</div>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-text-primary tracking-tight text-center">
               Things I've built.
             </h2>
           </div>
-          <Link href="/projects" className="hidden md:flex items-center gap-2 font-mono text-accent hover:text-accent-secondary transition-colors">
-            View All Projects <ArrowUpRight className="w-4 h-4" />
-          </Link>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

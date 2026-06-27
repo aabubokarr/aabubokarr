@@ -3,7 +3,7 @@ import ProjectsList from "@/components/sections/ProjectsList";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | Md Abu Bokar",
+  title: "Projects | Abu Bokar",
   description: "A comprehensive list of repositories fetched directly from my GitHub.",
 };
 

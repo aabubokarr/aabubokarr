@@ -55,7 +55,7 @@ export default function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-border-subtle/50 flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-mono text-text-dim">
-        <p>Copyright &copy; {currentYear} Md Abu Bokar. All rights reserved.</p>
+        <p>Copyright &copy; {currentYear} Abu Bokar. All rights reserved.</p>
       </div>
     </footer>
   );

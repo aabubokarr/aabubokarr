@@ -18,7 +18,7 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const p = await params;
   return {
-    title: `${p.repo} | Md Abu Bokar`,
+    title: `${p.repo} | Abu Bokar`,
     description: `Details and README for ${p.repo}`,
   };
 }
@@ -98,7 +98,7 @@ export default async function RepoDetailsPage({ params }: Props) {
               components={{
                 img: ({ node, ...props }) => {
                   let src = props.src;
-                  if (src && !src.startsWith("http") && !src.startsWith("data:")) {
+                  if (typeof src === 'string' && !src.startsWith("http") && !src.startsWith("data:")) {
                     src = src.replace(/^(\.\/|\/)/, '');
                     src = `https://raw.githubusercontent.com/aabubokarr/${repoDetails.name}/${repoDetails.default_branch || 'main'}/${src}`;
                   }
