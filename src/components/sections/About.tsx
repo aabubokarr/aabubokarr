@@ -38,7 +38,7 @@ export default function About() {
             A bit about me.
           </h2>
           <p className="text-text-secondary text-lg leading-relaxed max-w-lg mb-8">
-            I'm a full-stack engineer who loves blending seamless frontend experiences with robust backend architectures. With a background extending into machine learning and motion design, I don't just write code—I craft digital experiences that matter.
+            {"I'm a full-stack engineer who loves blending seamless frontend experiences with robust backend architectures. With a background extending into machine learning and motion design, I don't just write code—I craft digital experiences that matter."}
           </p>
           
           <div className="flex divide-x divide-border-subtle">
@@ -88,14 +88,14 @@ export default function About() {
           <div className="p-6 md:p-8 text-text-secondary leading-loose overflow-x-auto relative">
             <span className="text-accent-secondary">{`{`}</span>
             <div className="pl-6">
-              <div><span className="text-accent">"name"</span>: <span className="text-white">"{aboutData.name}"</span>,</div>
-              <div><span className="text-accent">"role"</span>: <span className="text-white">"{aboutData.role}"</span>,</div>
-              <div><span className="text-accent">"based"</span>: <span className="text-white">"{aboutData.based}"</span>,</div>
-              <div><span className="text-accent">"open_to"</span>: <span className="text-white">"{aboutData.open_to}"</span>,</div>
-              <div><span className="text-accent">"interests"</span>: <span className="text-accent-secondary">[</span></div>
+              <div><span className="text-accent">&quot;name&quot;</span>: <span className="text-white">&quot;{aboutData.name}&quot;</span>,</div>
+              <div><span className="text-accent">&quot;role&quot;</span>: <span className="text-white">&quot;{aboutData.role}&quot;</span>,</div>
+              <div><span className="text-accent">&quot;based&quot;</span>: <span className="text-white">&quot;{aboutData.based}&quot;</span>,</div>
+              <div><span className="text-accent">&quot;open_to&quot;</span>: <span className="text-white">&quot;{aboutData.open_to}&quot;</span>,</div>
+              <div><span className="text-accent">&quot;interests&quot;</span>: <span className="text-accent-secondary">[</span></div>
               <div className="pl-6">
                 {aboutData.interests.map((interest, i) => (
-                  <div key={i}><span className="text-white">"{interest}"</span>{i < aboutData.interests.length - 1 ? "," : ""}</div>
+                  <div key={i}><span className="text-white">&quot;{interest}&quot;</span>{i < aboutData.interests.length - 1 ? "," : ""}</div>
                 ))}
               </div>
               <span className="text-accent-secondary">]</span>

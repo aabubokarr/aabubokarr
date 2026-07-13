@@ -10,9 +10,9 @@ const particleVariants = {
     x: Math.sin(i) * 20,
     opacity: [0, 0.8, 0],
     transition: {
-      duration: Math.random() * 5 + 5,
+      duration: ((i * 1.7) % 5) + 5,
       repeat: Infinity,
-      delay: Math.random() * 5,
+      delay: (i * 1.3) % 5,
       ease: "linear" as const,
     },
   }),
@@ -22,17 +22,17 @@ const skillCategories = [
   {
     title: "Frontend",
     icon: <Layout className="w-5 h-5 text-accent" />,
-    skills: ["React", "Next.js", "TailwindCSS", "Framer Motion", "TypeScript", "Bootstrap"]
+    skills: ["React.js", "Next.js", "TailwindCSS", "Bootstrap", "Framer Motion"]
   },
   {
     title: "Backend",
     icon: <Code2 className="w-5 h-5 text-accent" />,
-    skills: ["Node.js", "Express.js", "Django", "Flask", "REST APIs", "JWT"]
+    skills: ["Node.js", "Express.js", "Flask", "REST API", "Uvicorn"]
   },
   {
     title: "Database",
     icon: <Database className="w-5 h-5 text-accent" />,
-    skills: ["PostgreSQL", "MySQL", "MongoDB"]
+    skills: ["MySQL", "PostgreSQL", "MongoDB"]
   },
   {
     title: "Mobile",
@@ -40,24 +40,24 @@ const skillCategories = [
     skills: ["React Native", "Expo"]
   },
   {
-    title: "ML / AI",
+    title: "ML / DL",
     icon: <Brain className="w-5 h-5 text-accent" />,
-    skills: ["PyTorch", "MediaPipe", "Computer Vision"]
+    skills: ["MediaPipe", "PyTorch", "TensorFlow", "OpenCV", "BERT"]
   },
   {
     title: "Languages",
     icon: <Globe className="w-5 h-5 text-accent" />,
-    skills: ["JavaScript", "TypeScript", "Python", "C/C++", "Java"]
+    skills: ["C/C++", "Java", "Python", "JavaScript", "TypeScript"]
   },
   {
     title: "Tools",
     icon: <PenTool className="w-5 h-5 text-accent" />,
-    skills: ["Figma", "Postman", "Photoshop", "After Effects", "Excel"]
+    skills: ["Figma", "Postman", "Photoshop", "After Effects", "Premiere Pro", "Gazebo"]
   },
   {
     title: "No-Code",
     icon: <LayoutTemplate className="w-5 h-5 text-accent" />,
-    skills: ["Framer", "Webflow", "WordPress"]
+    skills: ["Framer", "Webflow"]
   }
 ];
 
@@ -75,9 +75,9 @@ export default function Skills() {
             animate="animate"
             className="absolute rounded-full bg-accent blur-[2px]"
             style={{
-              width: Math.random() * 4 + 2 + "px",
-              height: Math.random() * 4 + 2 + "px",
-              left: `${Math.random() * 100}%`,
+              width: ((i * 1.5) % 4) + 2 + "px",
+              height: ((i * 1.5) % 4) + 2 + "px",
+              left: `${(i * 17) % 100}%`,
               bottom: "-10%",
             }}
           />

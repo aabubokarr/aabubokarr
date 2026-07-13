@@ -41,7 +41,7 @@ export default function ProjectsList({ initialProjects }: ProjectsListProps) {
           transition={{ duration: 0.5 }}
           className="mb-12"
         >
-          <Link href="/#projects" className="inline-flex items-center gap-2 text-text-secondary hover:text-accent font-mono mb-8 transition-colors">
+          <Link href="/" className="inline-flex items-center gap-2 text-text-secondary hover:text-accent font-mono mb-8 transition-colors">
             <ArrowLeft className="w-4 h-4" /> Back to Home
           </Link>
           

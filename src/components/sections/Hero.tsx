@@ -65,33 +65,16 @@ export default function Hero() {
             intelligent systems, and <span className="text-white font-medium">experiences worth clicking.</span>
           </motion.p>
           
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.1, duration: 0.6 }}
-            className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center items-center w-full sm:w-auto"
-          >
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#projects"
-              className="w-full sm:w-auto px-8 py-4 rounded-xl bg-accent text-primary font-bold font-mono tracking-tight shadow-[0_0_15px_var(--color-accent-glow)] hover:shadow-[0_0_30px_var(--color-accent-glow)] transition-all flex items-center justify-center gap-3 group relative overflow-hidden"
-            >
-              {/* Button shimmer effect */}
-              <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent group-hover:animate-shimmer" />
-              View Work 
-              <span className="text-xl group-hover:translate-y-1 transition-transform">↓</span>
-            </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/resume.pdf"
-              target="_blank"
+              href="/cv.pdf"
+              download="cv.pdf"
               className="w-full sm:w-auto px-8 py-4 rounded-xl border border-border-subtle bg-surface/30 backdrop-blur-sm text-text-primary font-mono tracking-tight hover:border-accent hover:text-accent hover:bg-accent/5 transition-all flex justify-center"
             >
               Download CV
             </motion.a>
-          </motion.div>
+
         </div>
       </div>
       

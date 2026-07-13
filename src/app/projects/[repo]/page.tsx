@@ -102,6 +102,7 @@ export default async function RepoDetailsPage({ params }: Props) {
                     src = src.replace(/^(\.\/|\/)/, '');
                     src = `https://raw.githubusercontent.com/aabubokarr/${repoDetails.name}/${repoDetails.default_branch || 'main'}/${src}`;
                   }
+                  // eslint-disable-next-line @next/next/no-img-element
                   return <img {...props} src={src} alt={props.alt || ''} />;
                 }
               }}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7B61FF" />
+      <stop offset="100%" stop-color="#4FFBDF" />
+    </linearGradient>
+  </defs>
+  <!-- Background with dark primary theme color and rounded corners -->
+  <rect width="512" height="512" rx="140" fill="#080B14" stroke="url(#logo-grad)" stroke-width="20" />
+  
+  <!-- "AB" Initials with the gradient styling -->
+  <text 
+    x="50%" 
+    y="52%" 
+    dominant-baseline="middle" 
+    text-anchor="middle" 
+    font-family="Syne, var(--font-syne), system-ui, -apple-system, sans-serif" 
+    font-size="240" 
+    font-weight="900" 
+    fill="url(#logo-grad)" 
+    letter-spacing="-15"
+  >AB</text>
+</svg>

@@ -13,10 +13,6 @@
     <img src="https://img.shields.io/badge/Email-080B14?style=for-the-badge&logo=gmail&logoColor=4FFBDF" />
   </a>
   &nbsp;
-  <a href="https://twitter.com/aabubokarr" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-080B14?style=for-the-badge&logo=x&logoColor=4FFBDF" />
-  </a>
-  &nbsp;
   <img src="https://komarev.com/ghpvc/?username=aabubokarr&label=Profile+Views&color=4FFBDF&style=for-the-badge&labelColor=080B14" />
 </div>
 
@@ -45,7 +41,6 @@ Software Engineer who loves building products that sit at the intersection of **
 - 🧠 Exploring **Generative AI**, **Deep Learning**, and **LLM applications**
 - 🎨 Obsessed with motion design — smooth UIs are non-negotiable
 - 💬 Ask me about **React, Next.js, Node.js, Computer Vision, or React Native**
-- ⚡ I speak 4 languages and write code in all of them (sort of)
 
 ---
 
@@ -71,7 +66,6 @@ Software Engineer who loves building products that sit at the intersection of **
 
 ![Node.js](https://img.shields.io/badge/Node.js-080B14?style=flat-square&logo=nodedotjs&logoColor=339933)
 ![Express](https://img.shields.io/badge/Express-080B14?style=flat-square&logo=express&logoColor=ffffff)
-![Django](https://img.shields.io/badge/Django-080B14?style=flat-square&logo=django&logoColor=092E20)
 ![Flask](https://img.shields.io/badge/Flask-080B14?style=flat-square&logo=flask&logoColor=ffffff)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-080B14?style=flat-square&logo=postgresql&logoColor=4169E1)
 ![MySQL](https://img.shields.io/badge/MySQL-080B14?style=flat-square&logo=mysql&logoColor=4479A1)
